@@ -1,0 +1,9 @@
+.DS_Store
+.idea/
+.vscode
+cmake-build-debug/
+cmake-build-release/
+
+thirdparty/*
+
+test_profile.prof

@@ -1,0 +1,5 @@
+/home/isaac/KDYCV/build/CMakeFiles/rebuild_cache.dir
+/home/isaac/KDYCV/build/CMakeFiles/edit_cache.dir
+/home/isaac/KDYCV/build/CMakeFiles/KDCV.dir
+/home/isaac/KDYCV/build/CMakeFiles/package_source.dir
+/home/isaac/KDYCV/build/CMakeFiles/package.dir

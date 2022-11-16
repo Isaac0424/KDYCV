@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/isaac/KDYCV/build",
+  "command": "/usr/bin/g++  -DBUILD_DEBUG=1 -isystem /usr/local/include/opencv4 -I/home/isaac/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/KDYCV/thirdparty/easy_profiler/install/Release/include -I/home/isaac/KDYCV/modules  -g -O0 -fPIC -g   -std=c++14 -o CMakeFiles/KDCV.dir/main.cpp.o -c /home/isaac/KDYCV/main.cpp",
+  "file": "/home/isaac/KDYCV/main.cpp"
+}
+]
