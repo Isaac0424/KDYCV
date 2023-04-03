@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/isaac/KDYCV/build/CMakeFiles/CMakeTmp
+Change Dir: /home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c7a1b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c7a1b.dir/build.make CMakeFiles/cmTC_c7a1b.dir/build
-make[1]: Entering directory '/home/isaac/KDYCV/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c7a1b.dir/CheckSymbolExists.cxx.o
-/usr/bin/g++    -g -O0 -fPIC    -std=c++14 -o CMakeFiles/cmTC_c7a1b.dir/CheckSymbolExists.cxx.o -c /home/isaac/KDYCV/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-Linking CXX executable cmTC_c7a1b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7a1b.dir/link.txt --verbose=1
-/usr/bin/g++  -g -O0 -fPIC     CMakeFiles/cmTC_c7a1b.dir/CheckSymbolExists.cxx.o  -o cmTC_c7a1b 
-CMakeFiles/cmTC_c7a1b.dir/CheckSymbolExists.cxx.o: In function `main':
-/home/isaac/KDYCV/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: undefined reference to `pthread_create'
+Run Build Command:"/usr/bin/make" "cmTC_574e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_574e7.dir/build.make CMakeFiles/cmTC_574e7.dir/build
+make[1]: 디렉터리 '/home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_574e7.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++    -g -O0 -fPIC    -std=c++14 -o CMakeFiles/cmTC_574e7.dir/CheckSymbolExists.cxx.o -c /home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_574e7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_574e7.dir/link.txt --verbose=1
+/usr/bin/g++  -g -O0 -fPIC     CMakeFiles/cmTC_574e7.dir/CheckSymbolExists.cxx.o  -o cmTC_574e7 
+CMakeFiles/cmTC_574e7.dir/CheckSymbolExists.cxx.o: In function `main':
+/home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c7a1b.dir/build.make:97: recipe for target 'cmTC_c7a1b' failed
-make[1]: *** [cmTC_c7a1b] Error 1
-make[1]: Leaving directory '/home/isaac/KDYCV/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c7a1b/fast' failed
-make: *** [cmTC_c7a1b/fast] Error 2
+CMakeFiles/cmTC_574e7.dir/build.make:97: recipe for target 'cmTC_574e7' failed
+make[1]: *** [cmTC_574e7] Error 1
+make[1]: 디렉터리 '/home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp' 나감
+Makefile:126: recipe for target 'cmTC_574e7/fast' failed
+make: *** [cmTC_574e7/fast] Error 2
 
-File /home/isaac/KDYCV/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/isaac/KDYCV/build/CMakeFiles/CMakeTmp
+Change Dir: /home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_08db7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_08db7.dir/build.make CMakeFiles/cmTC_08db7.dir/build
-make[1]: Entering directory '/home/isaac/KDYCV/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_08db7.dir/CheckFunctionExists.cxx.o
-/usr/bin/g++    -g -O0 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c++14 -o CMakeFiles/cmTC_08db7.dir/CheckFunctionExists.cxx.o -c /home/isaac/KDYCV/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_08db7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08db7.dir/link.txt --verbose=1
-/usr/bin/g++  -g -O0 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_08db7.dir/CheckFunctionExists.cxx.o  -o cmTC_08db7 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_ab7c4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab7c4.dir/build.make CMakeFiles/cmTC_ab7c4.dir/build
+make[1]: 디렉터리 '/home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_ab7c4.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++    -g -O0 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c++14 -o CMakeFiles/cmTC_ab7c4.dir/CheckFunctionExists.cxx.o -c /home/isaac/Git/KDYCV/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_ab7c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab7c4.dir/link.txt --verbose=1
+/usr/bin/g++  -g -O0 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ab7c4.dir/CheckFunctionExists.cxx.o  -o cmTC_ab7c4 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_08db7.dir/build.make:97: recipe for target 'cmTC_08db7' failed
-make[1]: *** [cmTC_08db7] Error 1
-make[1]: Leaving directory '/home/isaac/KDYCV/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_08db7/fast' failed
-make: *** [cmTC_08db7/fast] Error 2
+CMakeFiles/cmTC_ab7c4.dir/build.make:97: recipe for target 'cmTC_ab7c4' failed
+make[1]: *** [cmTC_ab7c4] Error 1
+make[1]: 디렉터리 '/home/isaac/Git/KDYCV/build/CMakeFiles/CMakeTmp' 나감
+Makefile:126: recipe for target 'cmTC_ab7c4/fast' failed
+make: *** [cmTC_ab7c4/fast] Error 2
 
 

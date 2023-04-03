@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/isaac/KDYCV
+CMAKE_SOURCE_DIR = /home/isaac/Git/KDYCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/isaac/KDYCV/build
+CMAKE_BINARY_DIR = /home/isaac/Git/KDYCV/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,17 +78,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/isaac/KDYCV/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
@@ -100,11 +89,22 @@ package/fast: package
 
 .PHONY : package/fast
 
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/isaac/Git/KDYCV/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/KDYCV/build/CMakeFiles /home/isaac/KDYCV/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles /home/isaac/Git/KDYCV/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/KDYCV/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -133,6 +133,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named USE_GEOMETRY
+
+# Build rule for target.
+USE_GEOMETRY: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 USE_GEOMETRY
+.PHONY : USE_GEOMETRY
+
+# fast build rule for target.
+USE_GEOMETRY/fast:
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/build
+.PHONY : USE_GEOMETRY/fast
+
+#=============================================================================
 # Target rules for targets named KDCV
 
 # Build rule for target.
@@ -144,6 +157,113 @@ KDCV: cmake_check_build_system
 KDCV/fast:
 	$(MAKE) -f CMakeFiles/KDCV.dir/build.make CMakeFiles/KDCV.dir/build
 .PHONY : KDCV/fast
+
+#=============================================================================
+# Target rules for targets named VISUALIZEGEOMETRY
+
+# Build rule for target.
+VISUALIZEGEOMETRY: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 VISUALIZEGEOMETRY
+.PHONY : VISUALIZEGEOMETRY
+
+# fast build rule for target.
+VISUALIZEGEOMETRY/fast:
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/build
+.PHONY : VISUALIZEGEOMETRY/fast
+
+#=============================================================================
+# Target rules for targets named USE_EIGEN
+
+# Build rule for target.
+USE_EIGEN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 USE_EIGEN
+.PHONY : USE_EIGEN
+
+# fast build rule for target.
+USE_EIGEN/fast:
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/build
+.PHONY : USE_EIGEN/fast
+
+examples/useEigen.o: examples/useEigen.cpp.o
+
+.PHONY : examples/useEigen.o
+
+# target to build an object file
+examples/useEigen.cpp.o:
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/examples/useEigen.cpp.o
+.PHONY : examples/useEigen.cpp.o
+
+examples/useEigen.i: examples/useEigen.cpp.i
+
+.PHONY : examples/useEigen.i
+
+# target to preprocess a source file
+examples/useEigen.cpp.i:
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/examples/useEigen.cpp.i
+.PHONY : examples/useEigen.cpp.i
+
+examples/useEigen.s: examples/useEigen.cpp.s
+
+.PHONY : examples/useEigen.s
+
+# target to generate assembly for a file
+examples/useEigen.cpp.s:
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/examples/useEigen.cpp.s
+.PHONY : examples/useEigen.cpp.s
+
+examples/useGeometry.o: examples/useGeometry.cpp.o
+
+.PHONY : examples/useGeometry.o
+
+# target to build an object file
+examples/useGeometry.cpp.o:
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/examples/useGeometry.cpp.o
+.PHONY : examples/useGeometry.cpp.o
+
+examples/useGeometry.i: examples/useGeometry.cpp.i
+
+.PHONY : examples/useGeometry.i
+
+# target to preprocess a source file
+examples/useGeometry.cpp.i:
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/examples/useGeometry.cpp.i
+.PHONY : examples/useGeometry.cpp.i
+
+examples/useGeometry.s: examples/useGeometry.cpp.s
+
+.PHONY : examples/useGeometry.s
+
+# target to generate assembly for a file
+examples/useGeometry.cpp.s:
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/examples/useGeometry.cpp.s
+.PHONY : examples/useGeometry.cpp.s
+
+examples/visualizeGeometry.o: examples/visualizeGeometry.cpp.o
+
+.PHONY : examples/visualizeGeometry.o
+
+# target to build an object file
+examples/visualizeGeometry.cpp.o:
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/examples/visualizeGeometry.cpp.o
+.PHONY : examples/visualizeGeometry.cpp.o
+
+examples/visualizeGeometry.i: examples/visualizeGeometry.cpp.i
+
+.PHONY : examples/visualizeGeometry.i
+
+# target to preprocess a source file
+examples/visualizeGeometry.cpp.i:
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/examples/visualizeGeometry.cpp.i
+.PHONY : examples/visualizeGeometry.cpp.i
+
+examples/visualizeGeometry.s: examples/visualizeGeometry.cpp.s
+
+.PHONY : examples/visualizeGeometry.s
+
+# target to generate assembly for a file
+examples/visualizeGeometry.cpp.s:
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/examples/visualizeGeometry.cpp.s
+.PHONY : examples/visualizeGeometry.cpp.s
 
 main.o: main.cpp.o
 
@@ -180,9 +300,21 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... USE_GEOMETRY"
 	@echo "... KDCV"
-	@echo "... package_source"
+	@echo "... VISUALIZEGEOMETRY"
+	@echo "... USE_EIGEN"
 	@echo "... package"
+	@echo "... package_source"
+	@echo "... examples/useEigen.o"
+	@echo "... examples/useEigen.i"
+	@echo "... examples/useEigen.s"
+	@echo "... examples/useGeometry.o"
+	@echo "... examples/useGeometry.i"
+	@echo "... examples/useGeometry.s"
+	@echo "... examples/visualizeGeometry.o"
+	@echo "... examples/visualizeGeometry.i"
+	@echo "... examples/visualizeGeometry.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

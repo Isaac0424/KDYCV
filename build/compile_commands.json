@@ -1,7 +1,22 @@
 [
 {
-  "directory": "/home/isaac/KDYCV/build",
-  "command": "/usr/bin/g++  -DBUILD_DEBUG=1 -isystem /usr/local/include/opencv4 -I/home/isaac/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/KDYCV/thirdparty/easy_profiler/install/Release/include -I/home/isaac/KDYCV/modules  -g -O0 -fPIC -g   -std=c++14 -o CMakeFiles/KDCV.dir/main.cpp.o -c /home/isaac/KDYCV/main.cpp",
-  "file": "/home/isaac/KDYCV/main.cpp"
+  "directory": "/home/isaac/Git/KDYCV/build",
+  "command": "/usr/bin/g++  -DBUILD_DEBUG=1 -I/usr/include/opencv -I/home/isaac/Git/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/Git/KDYCV/thirdparty/easy_profiler/install/Release/include -isystem /usr/include/eigen3 -I/home/isaac/Git/KDYCV/thirdparty/pangolin/install/Debug/lib/cmake/Pangolin/../../../include -I/home/isaac/Git/KDYCV/modules  -g -O0 -fPIC -g   -std=c++14 -o CMakeFiles/USE_GEOMETRY.dir/examples/useGeometry.cpp.o -c /home/isaac/Git/KDYCV/examples/useGeometry.cpp",
+  "file": "/home/isaac/Git/KDYCV/examples/useGeometry.cpp"
+},
+{
+  "directory": "/home/isaac/Git/KDYCV/build",
+  "command": "/usr/bin/g++  -DBUILD_DEBUG=1 -isystem /usr/include/opencv -I/home/isaac/Git/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/Git/KDYCV/thirdparty/easy_profiler/install/Release/include -isystem /usr/include/eigen3 -I/home/isaac/Git/KDYCV/thirdparty/pangolin/install/Debug/lib/cmake/Pangolin/../../../include -I/home/isaac/Git/KDYCV/modules  -g -O0 -fPIC -g   -std=c++14 -o CMakeFiles/KDCV.dir/main.cpp.o -c /home/isaac/Git/KDYCV/main.cpp",
+  "file": "/home/isaac/Git/KDYCV/main.cpp"
+},
+{
+  "directory": "/home/isaac/Git/KDYCV/build",
+  "command": "/usr/bin/g++  -DBUILD_DEBUG=1 -I/usr/include/opencv -I/home/isaac/Git/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/Git/KDYCV/thirdparty/easy_profiler/install/Release/include -isystem /usr/include/eigen3 -I/home/isaac/Git/KDYCV/thirdparty/pangolin/install/Debug/lib/cmake/Pangolin/../../../include -I/home/isaac/Git/KDYCV/modules -isystem /home/isaac/Git/KDYCV/thirdparty/pangolin/install/Debug/include  -g -O0 -fPIC -g   -std=c++14 -o CMakeFiles/VISUALIZEGEOMETRY.dir/examples/visualizeGeometry.cpp.o -c /home/isaac/Git/KDYCV/examples/visualizeGeometry.cpp",
+  "file": "/home/isaac/Git/KDYCV/examples/visualizeGeometry.cpp"
+},
+{
+  "directory": "/home/isaac/Git/KDYCV/build",
+  "command": "/usr/bin/g++  -DBUILD_DEBUG=1 -I/usr/include/opencv -I/home/isaac/Git/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/Git/KDYCV/thirdparty/easy_profiler/install/Release/include -isystem /usr/include/eigen3 -I/home/isaac/Git/KDYCV/thirdparty/pangolin/install/Debug/lib/cmake/Pangolin/../../../include -I/home/isaac/Git/KDYCV/modules  -g -O0 -fPIC -g   -std=c++14 -o CMakeFiles/USE_EIGEN.dir/examples/useEigen.cpp.o -c /home/isaac/Git/KDYCV/examples/useEigen.cpp",
+  "file": "/home/isaac/Git/KDYCV/examples/useEigen.cpp"
 }
 ]

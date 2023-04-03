@@ -6,5 +6,5 @@ CXX_FLAGS = -g -O0 -fPIC -g   -std=c++14
 
 CXX_DEFINES = -DBUILD_DEBUG=1
 
-CXX_INCLUDES = -isystem /usr/local/include/opencv4 -I/home/isaac/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/KDYCV/thirdparty/easy_profiler/install/Release/include -I/home/isaac/KDYCV/modules 
+CXX_INCLUDES = -isystem /usr/include/opencv -I/home/isaac/Git/KDYCV/thirdparty/gtest/install/Release/include -I/home/isaac/Git/KDYCV/thirdparty/easy_profiler/install/Release/include -isystem /usr/include/eigen3 -I/home/isaac/Git/KDYCV/thirdparty/pangolin/install/Debug/lib/cmake/Pangolin/../../../include -I/home/isaac/Git/KDYCV/modules 
 

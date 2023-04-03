@@ -54,10 +54,47 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/isaac/KDYCV
+CMAKE_SOURCE_DIR = /home/isaac/Git/KDYCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/isaac/KDYCV/build
+CMAKE_BINARY_DIR = /home/isaac/Git/KDYCV/build
+
+#=============================================================================
+# Target rules for target CMakeFiles/USE_GEOMETRY.dir
+
+# All Build rule for target.
+CMakeFiles/USE_GEOMETRY.dir/all:
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/depend
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaac/Git/KDYCV/build/CMakeFiles --progress-num=5,6 "Built target USE_GEOMETRY"
+.PHONY : CMakeFiles/USE_GEOMETRY.dir/all
+
+# Include target in all.
+all: CMakeFiles/USE_GEOMETRY.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/USE_GEOMETRY.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/USE_GEOMETRY.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 0
+.PHONY : CMakeFiles/USE_GEOMETRY.dir/rule
+
+# Convenience name for target.
+USE_GEOMETRY: CMakeFiles/USE_GEOMETRY.dir/rule
+
+.PHONY : USE_GEOMETRY
+
+# clean rule for target.
+CMakeFiles/USE_GEOMETRY.dir/clean:
+	$(MAKE) -f CMakeFiles/USE_GEOMETRY.dir/build.make CMakeFiles/USE_GEOMETRY.dir/clean
+.PHONY : CMakeFiles/USE_GEOMETRY.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/USE_GEOMETRY.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/KDCV.dir
@@ -66,7 +103,7 @@ CMAKE_BINARY_DIR = /home/isaac/KDYCV/build
 CMakeFiles/KDCV.dir/all:
 	$(MAKE) -f CMakeFiles/KDCV.dir/build.make CMakeFiles/KDCV.dir/depend
 	$(MAKE) -f CMakeFiles/KDCV.dir/build.make CMakeFiles/KDCV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaac/KDYCV/build/CMakeFiles --progress-num=1,2 "Built target KDCV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaac/Git/KDYCV/build/CMakeFiles --progress-num=1,2 "Built target KDCV"
 .PHONY : CMakeFiles/KDCV.dir/all
 
 # Include target in all.
@@ -76,9 +113,9 @@ all: CMakeFiles/KDCV.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/KDCV.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/KDYCV/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/KDCV.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/KDYCV/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 0
 .PHONY : CMakeFiles/KDCV.dir/rule
 
 # Convenience name for target.
@@ -93,6 +130,80 @@ CMakeFiles/KDCV.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/KDCV.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/VISUALIZEGEOMETRY.dir
+
+# All Build rule for target.
+CMakeFiles/VISUALIZEGEOMETRY.dir/all:
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/depend
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaac/Git/KDYCV/build/CMakeFiles --progress-num=7,8 "Built target VISUALIZEGEOMETRY"
+.PHONY : CMakeFiles/VISUALIZEGEOMETRY.dir/all
+
+# Include target in all.
+all: CMakeFiles/VISUALIZEGEOMETRY.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/VISUALIZEGEOMETRY.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/VISUALIZEGEOMETRY.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 0
+.PHONY : CMakeFiles/VISUALIZEGEOMETRY.dir/rule
+
+# Convenience name for target.
+VISUALIZEGEOMETRY: CMakeFiles/VISUALIZEGEOMETRY.dir/rule
+
+.PHONY : VISUALIZEGEOMETRY
+
+# clean rule for target.
+CMakeFiles/VISUALIZEGEOMETRY.dir/clean:
+	$(MAKE) -f CMakeFiles/VISUALIZEGEOMETRY.dir/build.make CMakeFiles/VISUALIZEGEOMETRY.dir/clean
+.PHONY : CMakeFiles/VISUALIZEGEOMETRY.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/VISUALIZEGEOMETRY.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/USE_EIGEN.dir
+
+# All Build rule for target.
+CMakeFiles/USE_EIGEN.dir/all:
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/depend
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaac/Git/KDYCV/build/CMakeFiles --progress-num=3,4 "Built target USE_EIGEN"
+.PHONY : CMakeFiles/USE_EIGEN.dir/all
+
+# Include target in all.
+all: CMakeFiles/USE_EIGEN.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/USE_EIGEN.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/USE_EIGEN.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaac/Git/KDYCV/build/CMakeFiles 0
+.PHONY : CMakeFiles/USE_EIGEN.dir/rule
+
+# Convenience name for target.
+USE_EIGEN: CMakeFiles/USE_EIGEN.dir/rule
+
+.PHONY : USE_EIGEN
+
+# clean rule for target.
+CMakeFiles/USE_EIGEN.dir/clean:
+	$(MAKE) -f CMakeFiles/USE_EIGEN.dir/build.make CMakeFiles/USE_EIGEN.dir/clean
+.PHONY : CMakeFiles/USE_EIGEN.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/USE_EIGEN.dir/clean
 
 .PHONY : clean
 
